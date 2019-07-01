@@ -27,9 +27,11 @@ class BookList extends Component {
     }
 }
 
+//This component should be a container as it needs to be aware of state changes and it gets all of that through props
 
 function mapStateToProps(state) {
 
+    //It is actually mapping application state (redux) to props
     //Whatever is returned from this will appear as props in the BookList container
     return {
         books: state.books
